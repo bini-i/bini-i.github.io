@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binyam Hailemeskel</title>
+  <link rel="stylesheet" href="./assets/stylesheets/css/style.css">
+  <script src="https://kit.fontawesome.com/2bce053742.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-light">
+  <header class="bg-white">
+    <nav class="container navbar navbar-expand-lg">
+      <div class="container">
+        <div class="logo">
+          <a class="navbar-brand" href="#">BH</a>
+        </div>
+        <div class="sidenav" id="mySidenav">
+          <a href="javascript:void(0)" class="closebtn d-block d-lg-none" onclick="closeNav()">&times;</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex justify-content-end d-lg-none collapse-btn" onclick="openNav()">
+          <div class="ham-holder">
+            <span class="ham1"></span>
+            <span class="ham2"></span>
+            <span class="ham3"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">I'm Binyam <br> Glad to see you!</h1>
+      <p class="lead">I’m a software developer! I can help you build a product , feature or website Look through some of my work and
+      experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+      <p class="connect">LET'S CONNECT</p>
+      <a class="social-links" href="https://twitter.com/binyamshewa" target="_blank">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a class="social-links" href="https://www.linkedin.com/in/binyam-hailemeskel-728048151/" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a class="social-links" href="https://github.com/bini-i" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="container card">
+    <div class="row g-0 p-4">
+      <div class="col-md-6 bg-light img-container">
+        <img class="card-img" src="./assets/images/fresh_grocery.png" alt="Fresh Grocery website">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title">Online Grocery Shop</h5>
+          <p class="card-text">Display of grocery items in index page and search page with filters</p>
+          <div class="d-flex">
+            <span class="lang px-3 py-1 mr-2">HTML</span>
+            <span class="lang px-3 py-1 mr-2">SCSS</span>
+            <span class="lang px-3 py-1 mr-2">JavaScript</span>
+          </div>
+          <button type="button" class="btn btn-outline-primary mt-5">
+            <a href="https://github.com/bini-i/Online-Grocery-Shop">See Project</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container card">
+    <div class="row g-0 p-4">
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title">Scraper</h5>
+          <p class="card-text">Scrapes products on ebay, with auction ending in less than 24hrs</p>
+          <div class="d-flex">
+            <span class="lang px-3 py-1 mr-2">Ruby</span>
+            <span class="lang px-3 py-1 mr-2">Sinatra</span>
+            <span class="lang px-3 py-1 mr-2">HTML5</span>
+            <span class="lang px-3 py-1 mr-2">Sass</span>
+            <span class="lang px-3 py-1 mr-2">Bootstrap</span>
+          </div>
+          <button type="button" class="btn btn-outline-primary mt-5">
+            <a href="https://github.com/bini-i/ebay-Scraper">See Project</a>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6 bg-light img-container">
+        <img class="card-img" src="./assets/images/scraper.png" alt="Fresh Grocery website">
+      </div>
+    </div>
+  </div>
+  <div class="container card">
+    <div class="row g-0 p-4">
+      <div class="col-md-6 bg-light img-container">
+        <img class="card-img" src="./assets/images/aticle.png" alt="Fresh Grocery website">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title">Online Grocery Shop</h5>
+          <p class="card-text">Display of grocery items in index page and search page with filters</p>
+          <div class="d-flex">
+            <span class="lang px-3 py-1 mr-2">Rails</span>
+            <span class="lang px-3 py-1 mr-2">HTML5</span>
+            <span class="lang px-3 py-1 mr-2">JavaScript</span>
+            <span class="lang px-3 py-1 mr-2">Sass</span>
+            <span class="lang px-3 py-1 mr-2">Bootstrap</span>
+          </div>
+          <button type="button" class="btn btn-outline-primary mt-5">
+            <a href="https://github.com/bini-i/article">See Project</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>

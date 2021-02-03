@@ -1,0 +1,178 @@
+header {
+    position: relative;
+    nav {
+        height: 72px;
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 12px;
+
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            left: 12px;
+            top: calc(50% - 40px/2);
+            .navbar-brand {
+                position: static;
+                width: 76px;
+                height: 20px;
+                left: 12px;
+                top: 10px;
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 20px;
+                /* identical to box height, or 111% */
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                /* Primary/B400 */
+
+                color: #6070FF;
+
+            }
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #6070FF;
+                mix-blend-mode: multiply;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+                text-align: center;
+            }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #fff;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+            .collapse-btn {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 8px;
+
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                right: 24px;
+                top: calc(50% - 40px/2);
+
+                border-radius: 8px;
+                
+                .ham-holder {
+                    position: static;
+                    left: 20%;
+                    right: 20%;
+                    top: 20%;
+                    bottom: 20%;
+
+
+                    /* Inside Auto Layout */
+
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                    margin: 0px 0px;
+                }
+            }
+
+            .ham1 {
+                position: absolute;
+                left: 16.67%;
+                right: 16.67%;
+                top: 29.17%;
+                bottom: 70.83%;
+
+                /* Base / 300 - Tertiary */
+
+                border: 2px solid #6070FF;
+            }
+
+            .ham2 {
+                position: absolute;
+                left: 16.67%;
+                right: 16.67%;
+                top: 50%;
+                bottom: 50%;
+
+                /* Base / 300 - Tertiary */
+
+                border: 2px solid #6070FF;
+            }
+
+            .ham3 {
+                position: absolute;
+                left: 16.67%;
+                right: 16.67%;
+                top: 70.83%;
+                bottom: 29.17%;
+
+                /* Base / 300 - Tertiary */
+
+                border: 2px solid #6070FF;
+            }
+        }
+        @media (min-width: 993px) {
+            .sidenav {
+                margin-left: auto;
+                .nav-link{
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 20px;
+                    /* identical to box height, or 133% */
+
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+
+                    /* Neutrals/N600 */
+
+                    color: #344563;
+                }
+            }
+        }
+    }
+
+}
