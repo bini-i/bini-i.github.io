@@ -1,5 +1,10 @@
 header {
     position: relative;
+    position: fixed;
+    background: transparent;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 5;
     nav {
         height: 72px;
         .logo {
@@ -154,6 +159,7 @@ header {
         }
         @media (min-width: 993px) {
             .sidenav {
+                max-width: 220px;
                 margin-left: auto;
                 .nav-link{
                     font-family: Poppins;

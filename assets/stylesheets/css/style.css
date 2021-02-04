@@ -7821,7 +7821,12 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 header {
-  position: relative; }
+  position: relative;
+  position: fixed;
+  background: transparent;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 5; }
   header nav {
     height: 72px; }
     header nav .logo {
@@ -7933,6 +7938,7 @@ header {
         border: 2px solid #6070FF; } }
     @media (min-width: 993px) {
       header nav .sidenav {
+        max-width: 220px;
         margin-left: auto; }
         header nav .sidenav .nav-link {
           font-family: Poppins;
@@ -7988,10 +7994,10 @@ header {
         padding-right: 10px; }
 
 .card {
-  margin-top: 150px;
-  margin-bottom: 150px; }
+  margin-top: 120px;
+  margin-bottom: 120px; }
   .card .row {
-    height: 500px;
+    min-height: 500px;
     border: 1px solid #DFE1E6;
     border-radius: 24px; }
     .card .row .img-container {
@@ -8012,7 +8018,7 @@ header {
       /* Theme 1 / Neutrals 1 */
       color: #091E42; }
     .card .row .card-body .card-text {
-      font-family: Poppins;
+      font-family: 'Poppins', sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -8031,10 +8037,12 @@ header {
       /* identical to box height, or 133% */
       letter-spacing: 0.03em;
       /* Primary/B400 */
-      color: #6070FF; }
+      color: #6070FF;
+      margin-bottom: 10px; }
     .card .row .card-body .btn a {
-      text-decoration: none; }
-      .card .row .card-body .btn a:hover {
-        color: white; }
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif; }
+    .card .row .card-body .btn:hover a {
+      color: white; }
 
 /*# sourceMappingURL=style.css.map */
