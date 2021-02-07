@@ -8559,4 +8559,48 @@ header {
       background-color: #F7F7F9;
       padding: 10px; }
 
+.contact {
+  color: #fff;
+  background-color: #fff; }
+  .contact .bg-container {
+    background: #6070FF;
+    border-top-left-radius: 120px; }
+    .contact .bg-container .container {
+      max-width: 551px;
+      padding-top: 142px;
+      padding-bottom: 120px;
+      text-align: center; }
+      .contact .bg-container .container h2, .contact .bg-container .container .h2 {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 52px;
+        /* or 130% */
+        /* Neutrals/N0 */
+        color: #FFFFFF; }
+      .contact .bg-container .container p {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        /* or 140% */
+        /* Primary/B50 */
+        color: #EBEBFF; }
+      .contact .bg-container .container .form-control {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px; }
+      .contact .bg-container .container .btn {
+        background-color: #fff;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        color: #6070FF; }
+        .contact .bg-container .container .btn:hover {
+          color: #6070FF; }
+
 /*# sourceMappingURL=style.css.map */
