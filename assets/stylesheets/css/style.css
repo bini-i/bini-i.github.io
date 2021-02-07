@@ -8317,7 +8317,6 @@ header {
         top: 0;
         left: 0;
         background-color: #6070FF;
-        mix-blend-mode: multiply;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -8388,7 +8387,7 @@ header {
         max-width: 220px;
         margin-left: auto; }
         header nav .sidenav .nav-link {
-          font-family: Poppins;
+          font-family: 'Poppins', sans-serif;
           font-style: normal;
           font-weight: 500;
           font-size: 15px;
@@ -8440,10 +8439,21 @@ header {
       .jumbotron .container .social-links .fa {
         color: #505F79;
         padding-right: 10px; }
+  @media (max-width: 575.98px) {
+    .jumbotron .container {
+      width: 100%;
+      padding-left: 24px;
+      padding-right: 24px; }
+      .jumbotron .container h1, .jumbotron .container .h1 {
+        font-size: 40px;
+        line-height: 52px; }
+      .jumbotron .container .lead {
+        font-size: 16px;
+        line-height: 24px; } }
 
 .portfolio .card {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 105px;
+  margin-bottom: 105px;
   border: 1px solid #DFE1E6;
   border-radius: 24px; }
   .portfolio .card .row {
@@ -8504,6 +8514,27 @@ header {
       background-color: #6070FF; }
       .portfolio .card:hover .btn a {
         color: white; }
+@media (max-width: 575.98px) {
+  .portfolio {
+    padding-left: 24px;
+    padding-right: 24px; }
+    .portfolio .card .row {
+      padding-top: 16px;
+      padding-bottom: 16px; }
+      .portfolio .card .row img {
+        border-radius: 8px; }
+      .portfolio .card .row .card-body {
+        padding-left: 0;
+        padding-right: 0; }
+        .portfolio .card .row .card-body .card-title {
+          font-size: 32px;
+          line-height: 44px; }
+        .portfolio .card .row .card-body .card-text {
+          font-size: 15px; }
+        .portfolio .card .row .card-body .lang {
+          font-size: 10px; }
+        .portfolio .card .row .card-body .btn {
+          margin-top: 10px; } }
 
 .about {
   background-color: #fff;
@@ -8552,12 +8583,33 @@ header {
       color: white; }
     .about .row .accordion .accordion-header {
       border: 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+      font-family: 'Poppins', sans-serif; }
+    .about .row .accordion .accordion-body {
+      padding-left: 0;
+      padding-right: 0; }
+      .about .row .accordion .accordion-body .item {
+        width: 122px;
+        max-height: 120px;
+        background-color: #F7F7F9;
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 8px; }
+  @media (max-width: 575.98px) {
+    .about .row .lead, .about .row .skills, .about .row .card .card-body {
+      padding-left: 0;
+      padding-right: 0; }
+    .about .row .card .card-body {
+      padding-bottom: 32px; }
     .about .row .accordion .accordion-body .item {
-      width: 122px;
-      height: 120px;
-      background-color: #F7F7F9;
-      padding: 10px; }
+      width: 100%; }
+      .about .row .accordion .accordion-body .item p {
+        display: inline;
+        margin-left: 20%; } }
 
 .contact {
   color: #fff;

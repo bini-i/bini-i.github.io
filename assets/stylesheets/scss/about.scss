@@ -1,0 +1,124 @@
+.about {
+    background-color: #fff;
+    border-top-right-radius: 120px;
+
+    .row {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .card {
+            .card-title {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 52px;
+                /* or 130% */
+
+                display: flex;
+                align-items: center;
+
+                /* Theme 1 / Neutrals 1 */
+
+                color: #091E42;
+            }
+
+            .card-text {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                /* or 150% */
+
+
+                /* Neutrals/N600 */
+
+                color: #344563;
+            }
+
+            .connect {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
+
+
+                /* Primary/B300 */
+
+                color: #7F8CFF;
+            }
+
+            .social-links {
+                text-decoration: none;
+
+                .fa {
+                    color: #505F79;
+                    padding-right: 10px;
+                }
+            }
+
+            .btn {
+                a {
+                    text-decoration: none;
+                    font-family: 'Poppins', sans-serif;
+                }
+
+                &:hover a {
+                    color: white;
+                }
+            }
+        }
+
+        .accordion {
+            .accordion-header {
+                border: 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .accordion-body {
+                padding-left: 0;
+                padding-right: 0;
+                .item {
+                    width: 122px;
+                    max-height: 120px;
+                    background-color: #F7F7F9;
+                    padding: 10px;
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 20px;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .row {
+            .lead, .skills, .card .card-body {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .card {
+                .card-body {
+                    padding-bottom: 32px;
+                }
+            }
+            .accordion {
+                .accordion-body {
+                    .item {
+                        width: 100%;
+                        p {
+                            display: inline;
+                            margin-left: 20%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

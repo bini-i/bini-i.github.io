@@ -1,0 +1,61 @@
+.contact {
+    color: #fff;
+    background-color: #fff;
+
+    .bg-container {
+        background: #6070FF;
+        border-top-left-radius: 120px;
+
+        .container {
+            max-width: 551px;
+            padding-top: 142px;
+            padding-bottom: 120px;
+            text-align: center;
+
+            h2 {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 52px;
+                /* or 130% */
+
+                /* Neutrals/N0 */
+
+                color: #FFFFFF;
+            }
+
+            p {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                /* or 140% */
+                /* Primary/B50 */
+
+                color: #EBEBFF;
+            }
+
+            .form-control {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 24px;
+            }
+
+            .btn {
+                background-color: #fff;
+                text-decoration: none;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                color: #6070FF;
+
+                &:hover {
+                    color: #6070FF;
+                }
+            }
+        }
+    }
+}

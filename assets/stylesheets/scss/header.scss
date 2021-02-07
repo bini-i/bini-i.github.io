@@ -62,7 +62,6 @@ header {
                 top: 0;
                 left: 0;
                 background-color: #6070FF;
-                mix-blend-mode: multiply;
                 overflow-x: hidden;
                 transition: 0.5s;
                 padding-top: 60px;
@@ -162,7 +161,7 @@ header {
                 max-width: 220px;
                 margin-left: auto;
                 .nav-link{
-                    font-family: Poppins;
+                    font-family: 'Poppins', sans-serif;
                     font-style: normal;
                     font-weight: 500;
                     font-size: 15px;

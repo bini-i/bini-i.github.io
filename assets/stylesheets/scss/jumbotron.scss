@@ -1,0 +1,76 @@
+.jumbotron {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #fff;
+    border-bottom-left-radius: 120px;
+
+    .container {
+        width: 70%;
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 60px;
+            /* or 125% */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.37px;
+
+            /* Theme 1 / Neutrals 1 */
+
+            color: #091E42;
+        }
+
+        .lead {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+            /* or 140% */
+
+
+            /* Theme 1 / Neutrals 3 */
+
+            color: #344563;
+        }
+
+        .connect {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #7F8CFF;
+        }
+
+        .social-links {
+            text-decoration: none;
+
+            .fa {
+                color: #505F79;
+                padding-right: 10px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .container {
+            width: 100%;
+            padding-left: 24px;
+            padding-right: 24px;
+            h1 {
+                font-size: 40px;
+                line-height: 52px;
+            }
+            .lead {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+
