@@ -8302,7 +8302,15 @@ header {
         align-items: center;
         text-align: center;
         /* Primary/B400 */
-        color: #6070FF; }
+        color: #6070FF;
+        background-image: url(../../images/favicon.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 3px;
+        padding-left: 36px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        margin: 1px; }
     @media screen and (max-height: 450px) {
       header nav .sidenav {
         padding-top: 15px; }
