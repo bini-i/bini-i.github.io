@@ -267,15 +267,20 @@
         <h2>Contact me</h2>
         <p class="mb-4">If you have an application you are interested in developing, a feature that you need built or a project that needs
           coding. I’d love to help with it.</p>
-        <form class="px-md-5">
+        <form class="px-md-5" action="https://api.staticforms.xyz/submit" method="post">
+          <input type="hidden" name="accessKey" value="7e7e744c-22c1-4350-9da1-b3aba256af93"> 
+          <input type="hidden" name="redirectTo" value="https://binyamhailemeskel.me">
+          <input type="hidden" name="subject" value="Contact message from Portfolio">
+          <input type="text" name="honeypot" style="display: none;">
+          
           <div class="form-group mb-4">
-            <input type="text" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+            <input type="text" name="name" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
           </div>
           <div class="form-group mb-4">
-            <input type="email" class="form-control rounded-0" id="exampleInputPassword1" placeholder="Email">
+            <input type="email" name="email" class="form-control rounded-0" id="exampleInputPassword1" placeholder="Email">
           </div>
           <div class="form-group mb-4">
-            <textarea class="form-control rounded-0 id="exampleFormControlTextarea1" rows="3"
+            <textarea name="message" class="form-control rounded-0 id="exampleFormControlTextarea1" rows="3"
               placeholder="Write your message here"></textarea>
           </div>
           <button type="submit" class="btn btn-outline-primary">Get in touch</button>
